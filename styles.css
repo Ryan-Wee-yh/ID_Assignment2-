@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navigation_bar{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    font-size: 3.0rem;
+    position: sticky;
+}
+
+.navigation_bar_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    color: aqua;
+}
+
+.homepage_tab{
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    height: 737px;
+    justify-content: center;
+}
+
+.homepage_tab_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.homepage_tab_card{
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.homepage_tab_card a{
+    text-align: center;
+}
+
+.product_page{
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.search_bar input[type=text]{
+    float: left;
+    padding: 6px;
+    border: none;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 30px;
+    width: 650px;
+}
+
+.product_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.product_card{
+    background-color: aquamarine;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    height: 300px;
+    width: 500px;
+}
+
+.price {
+    color: grey;
+    font-size: 35px;
+}
+  
+.product_card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: grey;
+    text-align: center;
+    cursor: pointer;
+    width: 70%;
+    font-size: 25px;
+}
+  
+.product_card button:hover {
+    opacity: 0.7;
+}
+
+.top_cart_page{
+    background-color: lightblue;
+    height:200px;
+}
+
+.top_cart_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.cost{
+    background-color: lightgrey;
+    height: 100px;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+.cost p{
+    margin-top:34px;
+    margin-left:25px;
+}
+
+.pay_now button{
+    height: 50px;
+    width:200px;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.bottom_cart_page{
+    
+}
