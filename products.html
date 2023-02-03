@@ -12,6 +12,7 @@
           href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
           integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
           crossorigin="anonymous"/>
+    
 </head>
 
 
@@ -53,86 +54,88 @@
     
     <div class="product_page">
         <div class="search_bar">
-            <input type="text" placeholder="Search..">
+            <input id = "input" type="text" name = "search"
+            onkeyup = "search_games()" placeholder="Search..">
         </div>
 
-        <div class="product_wrapper">
-            <div class="product_card">
+        <div id = "gamesList" class="product_wrapper">
+            
+            <div id = "Minecraft" class="product_card">
                 <img src="images/Minecraft.jpg" alt="Minecraft">
-                <h1>Minecraft</h1>
-                <p class = "price">$35.40</p>
+                <h1 class = "games">Minecraft</h1>
+                <div class = "price">$39.90</div>
                 <p>Create, explore, survive, repeat.</p>
                 <p><button>Add to Cart</button></p>
             </div>
 
-            <div class="product_card">
-                <img src="" alt="">
-                <h1></h1>
-                <p class = "price"></p>
-                <p></p>
+            <div id="Grand Theft Auto V" class="product_card">
+                <img src="images/GTA5.png" alt="Grand Theft Auto V">
+                <h1 class = "games">Grand Theft Auto V</h1>
+                <div class = "price">$39.99</div>
+                <p>Where you steal cars</p>
                 <p><button>Add to Cart</button></p>
             </div>
             
-            <div class="product_card">
-                <img src="" alt="">
-                <h1></h1>
-                <p class = "price"></p>
-                <p></p>
+            <div id="Valorant" class="product_card">
+                <img src="images/valorant.jpg" alt="Valorant">
+                <h1 class = "games">Valorant</h1>
+                <div class = "price">$0.01</div>
+                <p>Shoot heads</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="product_card">
-                <img src="" alt="">
-                <h1></h1>
-                <p class = "price"></p>
-                <p></p>
+            <div id="Osu" class="product_card">
+                <img src="images/osu.jpg" alt="Osu">
+                <h1 class = "games">Osu</h1>
+                <div class = "price">$0.01</div>
+                <p>Click circles</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="product_card">
-                <img src="" alt="">
-                <h1></h1>
-                <p class = "price"></p>
-                <p></p>
+            <div id="Red Dead Redemption" class="product_card">
+                <img src="images/red dead redemption.jpg" alt="Red Dead Redemption">
+                <h1 class = "games">Red Dead Redemption</h1>
+                <div class = "price">$33.60</div>
+                <p>Idk what this game is</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="product_card">
-                <img src="" alt="">
-                <h1></h1>
-                <p class = "price"></p>
-                <p></p>
+            <div id="The Legend of Zelda" class="product_card">
+                <img src="images/legend of zelda.jpg" alt="The Legend of Zelda">
+                <h1 class = "games">The Legend of Zelda</h1>
+                <div class = "price">$59.90</div>
+                <p>Idk what this game is</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="product_card">
-                <img src="" alt="">
-                <h1></h1>
-                <p class = "price"></p>
-                <p></p>
+            <div id="Super Smash Bros" class="product_card">
+                <img src="images/super smash bros.jpg" alt="Super Smash Bros">
+                <h1 class = "games">Super Smash Bros</h1>
+                <div class = "price">$56.50</div>
+                <p>Smash your bros</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="product_card">
-                <img src="" alt="">
-                <h1></h1>
-                <p class = "price"></p>
-                <p></p>
+            <div id="The Last of Us" class="product_card">
+                <img src="images/the last of us.webp" alt="The Last of Us">
+                <h1 class = "games">The Last of Us</h1>
+                <div class = "price">$14.90</div>
+                <p>Repopulate the human world</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="product_card">
-                <img src="" alt="">
-                <h1></h1>
-                <p class = "price"></p>
-                <p></p>
+            <div id="Watch Dogs" class="product_card">
+                <img src="images/watch dogs.webp" alt="Watch Dogs">
+                <h1 class = "games">Watch Dogs</h1>
+                <div class = "price">$30.00</div>
+                <p>Watching your dogs</p>
                 <p><button>Add to Cart</button></p>
             </div>
-            <div class="product_card">
-                <img src="" alt="">
-                <h1></h1>
-                <p class = "price"></p>
-                <p></p>
+            <div id="Elden Ring" class="product_card">
+                <img src="images/elden ring.webp" alt="Elden Ring">
+                <h1 class = "games">Elden Ring</h1>
+                <div class = "price">$80.64</div>
+                <p>Ring made of elden</p>
                 <p><button>Add to Cart</button></p>
             </div>
         </div>
 
-        <!-- 24 Game cards -->
+
     </div>
-    
+    <script src = "./products.js"></script>
 </body>
 </html>
