@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Header -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Main page </title>
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+          integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+          crossorigin="anonymous"/>
+</head>
+
+
+
+<!-- Body -->
+<body>
+    <header>
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="block">
+      
+      
+              <div class="icon-info">
+                <div>
+                    <a href="index.html">
+                        <img src="images/SG Dropship icon.png" alt="SG Dropship" width="110px" height="50px">
+                    </a>
+                
+                </div>
+              </div>
+              
+
+
+              <div class="block-info">
+                <a href="products.html">Browse Products</a>
+              </div>
+      
+              <div class="block-info">
+                <a href="cart.html">Cart</a>
+              </div>
+      
+              <div class="block-info">
+                <a href="rewards.html">Browse Rewards</a>
+              </div>
+      
+                <div class="block-info-right">
+                    <a onclick="loginForm()">Login</a>
+                </div>
+
+                <div class="block-info-right">
+                    <a onclick="signupForm()">Sign Up</a>
+                </div>
+            </div>
+          </div>
+    </header>
+
+
+    <!-- Login pop up -->
+    <div class="login-popup" id="loginForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Login</h1>
+          
+            <label for="Username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="Username" required>
+          
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+          
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closelogForm()">Close</button>
+        </form>
+    </div>
+    
+    
+    <!-- Sign Up pop up-->
+    <div class="signup-popup" id="signupForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Sign Up to SG Dropship!</h1>
+          
+            <label for="Username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="Username" required id="username-field">
+          
+            <label for="ps"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="ps" required >
+    
+            <label for="psw"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw" required id="password-field"> 
+          
+            <button type="submit" class="btn" id="submit-btn" onclick="hidesignin()">Sign Up!</button>
+            <button type="button" class="btn cancel" onclick="closesignForm()">Close</button>
+        </form>
+    </div>
+
+
+
+    <div class="rewards_page">
+        <div class="top_rewards_page">
+            <div class="exp_bar">
+                <div class="level">Level 0</div>
+            </div>
+            <div class="exp_needed">
+                <p>Exp needed: 100</p>
+            </div>
+        </div>
+
+        <div class="bottom_rewards_page">
+            <div class="perks">
+                <table>
+                    <tr>
+                        <td>Perk</td>
+                        <td>Perk</td>
+                        <td>Perk</td>
+                        <td>Perk</td>
+                        <td>Perk</td>
+                    </tr>
+                    <tr>
+                        <td>Perk</td>
+                        <td>Perk</td>
+                        <td>Perk</td>
+                        <td>Perk</td>
+                        <td>Perk</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="info_guide">
+                <p>
+                    Here's all the info you need for perks:
+                    BLAH BLAH BLAH
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
