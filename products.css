@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.icon{
+    font-size:60px;
+    color:lightblue;
+    text-shadow:2px 2px 4px #000000;
+}
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    margin:0px;
+}
+
+.navbar .block{
+    display: flex;
+}
+  
+.navbar a :hover, .block:hover .block-info:hover  { 
+    background: red;
+}
+  
+.navbar .block .block-info a{
+    float: left; 
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+}
