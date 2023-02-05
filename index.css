@@ -19,7 +19,7 @@
     display: flex;
 }
   
-.navbar a :hover, .block:hover .block-info:hover , .block-info-right:hover, .icon-info a :hover{ 
+.navbar a :hover, .block:hover .block-info:hover , .block-info-right:hover, .icon-info a :hover, .block-profile :hover{ 
     background: red;
 }
   
@@ -47,6 +47,17 @@
     padding: 24px 20px;
     text-decoration: none;
     padding-left: 100px;
+}
+
+.navbar .block .block-profile a{     
+    display: none;
+    float: right; 
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 24px 20px;
+    text-decoration: none;
 }
 
 .icon-info{
