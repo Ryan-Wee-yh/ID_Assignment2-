@@ -16,6 +16,18 @@ function closesignForm() {
     document.getElementById("signupForm").style.display = "none";
 }
 
+
+
+//Log in API data get and log in
+
+
+
+
+
+
+
+
+//Sign up validation
 function validate() {
     var username = document.getElementById("username-field").value;
     var password = document.getElementById("password-field").value;
@@ -27,9 +39,11 @@ function validate() {
       alert("You have successfully signed up! Now log in!")
       return true
     }
-  }
+}
 
 
+
+  //Sign up API data transfer
 $(document).ready(function () {
     //what kind of interface we want at the start 
     const APIKEY = "63b7c054969f06502871ab6f";
