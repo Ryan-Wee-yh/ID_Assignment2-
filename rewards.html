@@ -61,9 +61,145 @@
             </div>
           </div>
     </header>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+
+
+        <!-- Login pop up -->
+        <div class="login-popup" id="loginForm">
+            <form action="/action_page.php" class="form-container">
+              <h1>Login</h1>
+          
+              <label for="Username"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="Username" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn" id="login-btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closelogForm()">Close</button>
+            </form>
+          </div>
+    
+    
+        <!-- Sign Up pop up-->
+    <div class="signup-popup" id="signupForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Sign Up to SG Dropship!</h1>
+      
+          <label for="Username"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="Username" required id="username-field">
+          
+          <label for="ps"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="ps" required >
+
+          <label for="psw"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw" required id="password-field"> 
+      
+          <button type="submit" class="btn" id="submit-btn" >Sign Up!</button>
+          <button type="button" class="btn cancel" onclick="closesignForm()">Close</button>
+        </form>
+    </div>
+
+    <!-- validation for Sign Up-->
+    <div class="signup-popup" id="nousername">
+        <form action="/action_page.php" class="form-container">
+            <h1>No Username Detected! Try Again</h1>
+        </form>
+    </div>
+
+
+
+    <div>
+        Your points
+        How to get points? Visit your profile and find out
+    </div>
+
+
+    <div>
+        <div class="rewards_page">
+            <div class="search_bar">
+                <input id = "input" type="text" name = "search"
+                onkeyup = "search_games()" placeholder="Search..">
+            </div>
+    
+            <div id = "gamesList" class="product_wrapper">
+                
+                <div id = "Minecraft" class="product_card">
+                    <img src="images/Minecraft.jpg" alt="Minecraft">
+                    <h1 class = "games">Minecraft</h1>
+                    <div class = "price">$39.90</div>
+                    <p>Create, explore, survive, repeat.</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+    
+                <div id="Grand Theft Auto V" class="product_card">
+                    <img src="images/GTA5.png" alt="Grand Theft Auto V">
+                    <h1 class = "games">Grand Theft Auto V</h1>
+                    <div class = "price">$39.99</div>
+                    <p>Where you steal cars</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+                
+                <div id="Valorant" class="product_card">
+                    <img src="images/valorant.jpg" alt="Valorant">
+                    <h1 class = "games">Valorant</h1>
+                    <div class = "price">$0.01</div>
+                    <p>Shoot heads</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+                <div id="Osu" class="product_card">
+                    <img src="images/osu.jpg" alt="Osu">
+                    <h1 class = "games">Osu</h1>
+                    <div class = "price">$0.01</div>
+                    <p>Click circles</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+                <div id="Red Dead Redemption" class="product_card">
+                    <img src="images/red dead redemption.jpg" alt="Red Dead Redemption">
+                    <h1 class = "games">Red Dead Redemption</h1>
+                    <div class = "price">$33.60</div>
+                    <p>Idk what this game is</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+                <div id="The Legend of Zelda" class="product_card">
+                    <img src="images/legend of zelda.jpg" alt="The Legend of Zelda">
+                    <h1 class = "games">The Legend of Zelda</h1>
+                    <div class = "price">$59.90</div>
+                    <p>Idk what this game is</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+                <div id="Super Smash Bros" class="product_card">
+                    <img src="images/super smash bros.jpg" alt="Super Smash Bros">
+                    <h1 class = "games">Super Smash Bros</h1>
+                    <div class = "price">$56.50</div>
+                    <p>Smash your bros</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+                <div id="The Last of Us" class="product_card">
+                    <img src="images/the last of us.webp" alt="The Last of Us">
+                    <h1 class = "games">The Last of Us</h1>
+                    <div class = "price">$14.90</div>
+                    <p>Repopulate the human world</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+                <div id="Watch Dogs" class="product_card">
+                    <img src="images/watch dogs.webp" alt="Watch Dogs">
+                    <h1 class = "games">Watch Dogs</h1>
+                    <div class = "price">$30.00</div>
+                    <p>Watching your dogs</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+                <div id="Elden Ring" class="product_card">
+                    <img src="images/elden ring.webp" alt="Elden Ring">
+                    <h1 class = "games">Elden Ring</h1>
+                    <div class = "price">$80.64</div>
+                    <p>Ring made of elden</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="rewards.js"></script>
-</body>
-
-
-

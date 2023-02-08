@@ -58,11 +58,14 @@ $(document).ready(function () {
             var password =  $('#password-field').val()
             var level = 1
             var points = 0
+            var xp = 0
         
             var jsondata = {"username": username,
                             "password": password,
                             "level": level,
-                            "points": points};
+                            "points": points,
+                            "xp": xp};
+        
         
             var settings = {
             "async": true,

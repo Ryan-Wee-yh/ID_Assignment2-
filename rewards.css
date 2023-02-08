@@ -144,3 +144,78 @@
 .form-container .btn:hover, .open-button:hover {
     opacity: 100;
 }
+
+
+
+
+
+
+
+
+.rewards_page{
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    height: 1500px;
+}
+
+.product_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.product_card{
+    background-color: aquamarine;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    height: 400px;
+    width: 360px;
+    align-content: center;
+}
+
+.product_card h1{
+    margin-top: 7px;
+    height: 40px;
+    font-size: 28px;
+}
+
+.product_card p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    height: 50px;
+    margin-top: 5px;
+}
+.price {
+    color: grey;
+    height: 40px;
+    font-size: 29px;
+}
+  
+.product_card button {
+    border: none;
+    outline: 0;
+    padding: 7px;
+    color: white;
+    background-color: grey;
+    text-align: center;
+    cursor: pointer;
+    width: 65%;
+    font-size: 25px;
+    margin: auto;
+}
+  
+.product_card button:hover {
+    opacity: 0.7;
+}
+
+.product_card img{
+    height: 182px;
+    margin: auto;
+    width: 320px;
+    margin-top: 10px;
+}

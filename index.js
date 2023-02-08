@@ -58,11 +58,14 @@ $(document).ready(function () {
             var password =  $('#password-field').val()
             var level = 1
             var points = 0
+            var xp = 0
         
             var jsondata = {"username": username,
                             "password": password,
                             "level": level,
-                            "points": points};
+                            "points": points,
+                            "xp": xp};
+        
         
             var settings = {
             "async": true,
@@ -84,4 +87,42 @@ $(document).ready(function () {
         }
     })
     
+})
+
+
+
+
+//Login button
+$('#login-btn').on("click", function (e){
+    //prevent default action of the button stops page from refreshing
+    e.preventDefault();
+
+    if(validate() == true)
+    {
+
+        var username =  $('#username-field').val()
+        var password =  $('#password-field').val()
+
+        if(password && username == ){
+            
+        }
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://interactivedev-2a8f.restdb.io/rest/account",
+            "method": "GET",
+            "headers": {
+              "content-type": "application/json",
+              "x-apikey": APIKEY,
+              "cache-control": "no-cache"
+            }
+          }
+          
+          $.ajax(settings).done(function (response) {
+            console.log(response);
+          });
+
+        
+
+    }
 })
