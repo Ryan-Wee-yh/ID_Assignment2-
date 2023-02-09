@@ -53,7 +53,8 @@
     <div class="top_cart_page">
         <div class="top_cart_wrapper">
             <div class="cost">
-                <p>Total cost: </p>
+                <p>Total cost: $</p>
+                <p id = "cost"></p>
             </div>
             <div class="pay_now">
                 <button>Pay now</button>
@@ -73,32 +74,31 @@
             </div>
 
             <div class="cart_item">
-
+                <h1>Your cart is empty</h1>
+                <!-- 
                 <div class="game_image">
                     <img src="images/Minecraft.jpg" alt="Minecraft">
                 </div>
-
-                <div class="details">         
-                    <div class="about">
-                        <h3>Minecraft</h3>
-                    <div>
-                    
-                    <div class="counter">
-                        <button>+</button>
-                        <p>1</p>
-                        <button>-</button>
-                    </div>
-                    <div class="price">
-                        <h3>$35.00</h3>
-                    </div>
-                    <div class="remove">
-                        <a href="">Remove</a>
-                    </div>
+                <div class="about">
+                    <h3>Minecraft</h3>
                 </div>
+                <hr>
+                <div class="counter">
+                    <button id = "increase">+</button>
+                    <p id="quantity">0</p>
+                    <button id = "decrease">-</button>
+                </div>
+                <hr>
+                <div class="price">
+                    <h3>$35.00</h3>
+                </div>
+                <div class="remove">
+                    <a href="">Remove</a>
+                </div>
+                -->
             </div>
             
         </div>
-        <!-- 
         <hr>
         <div class="checkout">
             <div class="total_cost">
@@ -108,7 +108,7 @@
                 <button class = "button">Checkout</button>
             </div>
         </div>
-        -->
     </div>
+    <script src = "./cart.js"></script>
 </body>
 </html>

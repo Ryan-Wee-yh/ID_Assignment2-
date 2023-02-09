@@ -1,5 +1,3 @@
-//let gamesList = ["Minecraft","Grand Theft Auto V","Valorant","Osu","Red Dead Redemption",
-//"The Legend of Zelda","Super Smash Bros","The Last of Us","Watch Dogs","Elden Ring"];
 function search_games() {
     let input = document.getElementById('input').value
     input=input.toLowerCase();
