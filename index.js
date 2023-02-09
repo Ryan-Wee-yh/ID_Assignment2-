@@ -103,8 +103,6 @@ $('#login-btn').on("click", function (e){
         var username =  $('#username-field').val()
         var password =  $('#password-field').val()
 
-        if(password && username == ){
-            
         }
         var settings = {
             "async": true,
@@ -124,5 +122,4 @@ $('#login-btn').on("click", function (e){
 
         
 
-    }
-})
+    })
