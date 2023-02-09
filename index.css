@@ -20,7 +20,7 @@
 }
   
 .navbar a :hover, .block:hover .block-info:hover , .block-info-right:hover, .icon-info a :hover, .block-profile :hover{ 
-    background: red;
+    background: lightgray;
 }
   
 .navbar .block .block-info a{
@@ -157,7 +157,7 @@
     background: lightblue;
     display: flex;
     flex-direction: column;
-    height: 737px;
+    height: 905px;
     justify-content: center;
 }
 
@@ -180,8 +180,10 @@
     align-content: center;
     text-align: center;
     background-color: whitesmoke;
+    border-radius: 30px;
 }
 
 .homepage_tab_card a{
     text-align: center;
+    font-size: 30px;
 }

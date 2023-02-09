@@ -8,11 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Browse products </title>
     <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="cart.css" />
     <link rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
           integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
           crossorigin="anonymous"/>
-    
+    <script src = "./app.js"></script>    
 </head>
 
 
@@ -23,18 +24,22 @@
         <!-- Navbar -->
         <div class="navbar">
             <div class="block">
+                <div class="icon-info">
+                    <div>
+                        <a href="index.html">
+                            <img src="images/SG Dropship icon.png" alt="SG Dropship" width="110px" height="50px">
+                        </a>
+                    
+                    </div>
+                </div>     
       
-      
-              <div class="block-info">
-                <a href="index.html">Icon</a>
-              </div>
       
               <div class="block-info">
                 <a href="products.html">Browse Products</a>
               </div>
       
               <div class="block-info">
-                <a href="cart.html">Cart</a>
+                <a href="#anchor">Cart</a>
               </div>
       
               <div class="block-info">
@@ -61,90 +66,111 @@
         <div id = "gamesList" class="product_wrapper">
             
             <div id = "Minecraft" class="product_card">
-                <img src="images/Minecraft.jpg" alt="Minecraft">
+                <img class = "image" src="images/Minecraft.jpg" alt="Minecraft">
                 <h1 class = "games">Minecraft</h1>
                 <div class = "price">$39.90</div>
                 <p>Create, explore, survive, repeat.</p>
-                <button onclick="addToCart()">Add to Cart</button>
+                <button class = "add_To_Cart">Add to Cart</button>
             </div>
 
             <div id="Grand Theft Auto V" class="product_card">
-                <img src="images/GTA5.png" alt="Grand Theft Auto V">
+                <img class = "image" src="images/GTA5.png" alt="Grand Theft Auto V">
                 <h1 class = "games">Grand Theft Auto V</h1>
                 <div class = "price">$39.99</div>
                 <p>Where you steal cars</p>
-                <button onclick="addToCart()">Add to Cart</button>
+                <button class = "add_To_Cart">Add to Cart</button>
             </div>
             
             <div id="Valorant" class="product_card">
-                <img src="images/valorant.jpg" alt="Valorant">
+                <img class = "image" src="images/valorant.jpg" alt="Valorant">
                 <h1 class = "games">Valorant</h1>
                 <div class = "price">$0.01</div>
                 <p>Shoot heads</p>
-                <button onclick="addToCart()">Add to Cart</button>
+                <button class = "add_To_Cart">Add to Cart</button>
             </div>
 
             <div id="Osu" class="product_card">
-                <img src="images/osu.jpg" alt="Osu">
+                <img class = "image" src="images/osu.jpg" alt="Osu">
                 <h1 class = "games">Osu</h1>
                 <div class = "price">$0.01</div>
                 <p>Click circles</p>
-                <button onclick="addToCart()">Add to Cart</button>
+                <button class = "add_To_Cart">Add to Cart</button>
             </div>
 
             <div id="Red Dead Redemption" class="product_card">
-                <img src="images/red dead redemption.jpg" alt="Red Dead Redemption">
+                <img class = "image" src="images/red dead redemption.jpg" alt="Red Dead Redemption">
                 <h1 class = "games">Red Dead Redemption</h1>
                 <div class = "price">$33.60</div>
                 <p>Idk what this game is</p>
-                <button onclick="addToCart()">Add to Cart</button>
+                <button class = "add_To_Cart">Add to Cart</button>
             </div>
 
             <div id="The Legend of Zelda" class="product_card">
-                <img src="images/legend of zelda.jpg" alt="The Legend of Zelda">
+                <img class = "image" src="images/legend of zelda.jpg" alt="The Legend of Zelda">
                 <h1 class = "games">The Legend of Zelda</h1>
                 <div class = "price">$59.90</div>
                 <p>Idk what this game is</p>
-                <button onclick="addToCart()">Add to Cart</button>
+                <button class = "add_To_Cart">Add to Cart</button>
             </div>
 
             <div id="Super Smash Bros" class="product_card">
-                <img src="images/super smash bros.jpg" alt="Super Smash Bros">
+                <img class = "image" src="images/super smash bros.jpg" alt="Super Smash Bros">
                 <h1 class = "games">Super Smash Bros</h1>
                 <div class = "price">$56.50</div>
                 <p>Smash your bros</p>
-                <button onclick="addToCart()">Add to Cart</button>
+                <button class = "add_To_Cart">Add to Cart</button>
             </div>
 
             <div id="The Last of Us" class="product_card">
-                <img src="images/the last of us.webp" alt="The Last of Us">
+                <img class = "image" src="images/the last of us.webp" alt="The Last of Us">
                 <h1 class = "games">The Last of Us</h1>
                 <div class = "price">$14.90</div>
                 <p>Repopulate the human world</p>
-                <button onclick="addToCart()">Add to Cart</button>
+                <button class = "add_To_Cart">Add to Cart</button>
             </div>
 
             <div id="Watch Dogs" class="product_card">
-                <img src="images/watch dogs.webp" alt="Watch Dogs">
+                <img class = "image" src="images/watch dogs.webp" alt="Watch Dogs">
                 <h1 class = "games">Watch Dogs</h1>
                 <div class = "price">$30.00</div>
                 <p>Watching your dogs</p>
-                <button onclick="addToCart()">Add to Cart</button>
+                <button class = "add_To_Cart">Add to Cart</button>
             </div>
             
             <div id="Elden Ring" class="product_card">
-                <img src="images/elden ring.webp" alt="Elden Ring">
+                <img class = "image" src="images/elden ring.webp" alt="Elden Ring">
                 <h1 class = "games">Elden Ring</h1>
                 <div class = "price">$80.64</div>
                 <p>Ring made of elden</p>
-                <button onclick="addToCart()">Add to Cart</button>
+                <button class = "add_To_Cart">Add to Cart</button>
             </div>
         </div>
-
-
     </div>
-    <script src = "./app.js"></script>
+
+        
+    
+    <div class="top_cart_page" id="anchor">
+        <div class="top_cart_wrapper">
+            <div class="cost">
+                <p>Total cost: $</p>
+                <p class = "total_cost">0</p>
+            </div>
+            <button class = "pay_now">Pay now</button>
+        </div>
+    </div>
+
+    <div class="bottom_cart_page">
+        <div class="cart">
+            <div class="header_wrapper">
+                <div class="title">
+                    <p>Your Shopping Cart</p> 
+                </div>
+            </div>
+            <div class="games_container">
+            </div>
+        </div>
+        <hr>
+    </div>
     <script src = "./products.js"></script>
-    <script src = "./cart.js"></script>
 </body>
 </html>
