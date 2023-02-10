@@ -2,13 +2,6 @@ var xp = localStorage.getItem("xp")
 var username = localStorage.getItem("username")
 var level = localStorage.getItem("level")
 
-
-
-let percentage = xp/500;
-document.getElementsByClassName("progress").width = percentage;
-console.log(xp, percentage)
-
-
 showusername();
 function showusername(){
     $('#username').text(username);
