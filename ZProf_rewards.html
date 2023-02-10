@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Rewards page </title>
-    <link rel="stylesheet" href="rewards.css" />
+    <link rel="stylesheet" href="ZProf_rewards.css" />
     <link rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
           integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
@@ -42,14 +42,6 @@
               <div class="block-info">
                 <a href="rewards.html">Browse Rewards</a>
               </div>
-      
-                <div class="block-info-right">
-                    <a onclick="loginForm()">Login</a>
-                </div>
-
-                <div class="block-info-right">
-                    <a onclick="signupForm()">Sign Up</a>
-                </div>
 
                 <div class="block-profile">
                     <a href="profile.html">Profile</a>
@@ -57,52 +49,6 @@
             </div>
           </div>
     </header>
-
-
-
-
-        <!-- Login pop up -->
-        <div class="login-popup" id="loginForm">
-            <form action="/action_page.php" class="form-container">
-              <h1>Login</h1>
-          
-              <label for="Username"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="Username" required>
-          
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-          
-              <button type="submit" class="btn" id="login-btn">Login</button>
-              <button type="button" class="btn cancel" onclick="closelogForm()">Close</button>
-            </form>
-          </div>
-    
-    
-        <!-- Sign Up pop up-->
-    <div class="signup-popup" id="signupForm">
-        <form action="/action_page.php" class="form-container">
-          <h1>Sign Up to SG Dropship!</h1>
-      
-          <label for="Username"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="Username" required id="username-field">
-          
-          <label for="ps"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="ps" required >
-
-          <label for="psw"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw" required id="password-field"> 
-      
-          <button type="submit" class="btn" id="submit-btn" >Sign Up!</button>
-          <button type="button" class="btn cancel" onclick="closesignForm()">Close</button>
-        </form>
-    </div>
-
-    <!-- validation for Sign Up-->
-    <div class="signup-popup" id="nousername">
-        <form action="/action_page.php" class="form-container">
-            <h1>No Username Detected! Try Again</h1>
-        </form>
-    </div>
 
 
 
@@ -253,7 +199,5 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="rewards.js"></script>
+    <script src="ZProf_rewards.js"></script>
 </body>
-
-
