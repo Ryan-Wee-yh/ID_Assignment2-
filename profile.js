@@ -216,3 +216,4 @@ function checkForDraw() {
     alert("It's a draw!");
     return true;
 }
+
