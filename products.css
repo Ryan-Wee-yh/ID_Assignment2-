@@ -6,11 +6,8 @@
     scroll-behavior: smooth;
 }
 
-.icon{
-    font-size:60px;
-    color:lightblue;
-    text-shadow:2px 2px 4px #000000;
-}
+/*navigation bar*/
+
 .navbar {
     overflow: hidden;
     background-color: white;
@@ -21,8 +18,8 @@
     display: flex;
 }
   
-.navbar a :hover, .block:hover .block-info:hover  { 
-    background: red;
+.navbar a :hover, .block:hover .block-info:hover , .block-info-right:hover, .icon-info a :hover, .block-profile :hover{ 
+    background: lightgray;
 }
   
 .navbar .block .block-info a{
@@ -34,6 +31,47 @@
     padding: 16px 18px;
     text-decoration: none;
 }
+
+.navbar .block .block-right{
+    float: right; 
+    padding-right:200px ;
+}
+
+.navbar .block .block-info-right a{     
+    float: left; 
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 24px 20px;
+    text-decoration: none;
+    padding-left: 100px;
+    cursor: pointer;
+}
+
+.navbar .block .block-profile a{     
+    display: none;
+    float: right; 
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 24px 20px;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.icon-info{
+    float: left; 
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 6px 6px;
+    text-decoration: none;
+}
+
+
 
 .product_page{
     background: lightblue;

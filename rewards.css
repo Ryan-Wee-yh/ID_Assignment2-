@@ -20,7 +20,7 @@
 }
   
 .navbar a :hover, .block:hover .block-info:hover , .block-info-right:hover, .icon-info a :hover, .block-profile :hover{ 
-    background: red;
+    background: lightgray;
 }
   
 .navbar .block .block-info a{
@@ -59,6 +59,7 @@
     text-align: center;
     padding: 24px 20px;
     text-decoration: none;
+    z-index: 2;
 }
 
 .icon-info{

@@ -145,11 +145,9 @@ $(document).ready(function () {
                         document.getElementById("profile").style.display = "block";
                         
                         
+                        
 
                     }
-                    else(
-                        alert("Incorrect login credentials detected, try again!")
-                    )
                 }
                 console.log(response);
             });
