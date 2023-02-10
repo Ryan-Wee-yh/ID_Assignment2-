@@ -175,7 +175,7 @@
 .pointinfo_pos{
     color: whitesmoke;
     background-color: #acb6e5;
-    width: 50%;
+    width: 60%;
     padding-left:110px;
     padding-top: 15px;
     text-align: left;
@@ -184,6 +184,7 @@
 .points_pos{
     padding-top: 10px;
     padding-left: 50px;
+    padding-right: 50px;
     justify-content: center;
     font-size: 35px;
     color: orangered;

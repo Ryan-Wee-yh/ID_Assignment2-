@@ -128,61 +128,68 @@ function addItemToCart(title, price, image) {
 }
 
 
-function calctotal(){
+
+
+
+$(document).ready(function () {
+
+    var price = parseFloat(`${'.total_cost'}`.innerText.replace('$', ''))
+
     var points = localStorage.getItem("points")
     var xp = localStorage.getItem("xp")
     var level = localStorage.getItem("level")
 
     var newxp = Math.round(num)
     var newpoints = Math.round(num/10)
+    console.log(newxp)
+    console.log(newpoints)
 
-    finalpoints = newpoints + points
-    finalxp = newxp + xp
+    $("#calctotal").on("click",function(e){
 
-
-
-
-    if(finalxp >= 100 && level == 1){
-        level = level + 1
-        finalxp = finalxp - 100
-    }
-    else if(finalxp >= 150 && level == 2){
-        level = level + 1
-        finalxp = finalxp - 150
-    }
-    else if(finalxp >= 200 && level == 3){
-        level = level + 1
-        finalxp = finalxp - 200
-    }
-    else if(finalxp >= 250 && level == 4){
-        level = level + 1
-        finalxp = finalxp - 250
-    }
-    else if(finalxp >= 300 && level == 5){
-        level = level + 1
-        finalxp = finalxp - 300
-    }
-    else if(finalxp >= 350 && level == 6){
-        level = level + 1
-        finalxp = finalxp - 350
-    }
-    else if(finalxp >= 400 && level == 7){
-        level = level + 1
-        finalxp = finalxp - 400
-    }
-    else if(finalxp >= 450 && level == 8){
-        level = level + 1
-        finalxp = finalxp - 450
-    }
-    else if(finalxp >= 500 && level == 9){
-        level = level + 1
-        finalxp = finalxp - 500
-    }
-}
+        finalpoints = newpoints + points
+        finalxp = newxp + xp
+        console.log(finalpoints)
+        console.log(finalxp)
 
 
+        if(finalxp >= 100 && level == 1){
+            level = level + 1
+            finalxp = finalxp - 100
+        }
+        else if(finalxp >= 150 && level == 2){
+            level = level + 1
+            finalxp = finalxp - 150
+        }
+        else if(finalxp >= 200 && level == 3){
+            level = level + 1
+            finalxp = finalxp - 200
+        }
+        else if(finalxp >= 250 && level == 4){
+            level = level + 1
+            finalxp = finalxp - 250
+        }
+        else if(finalxp >= 300 && level == 5){
+            level = level + 1
+            finalxp = finalxp - 300
+        }
+        else if(finalxp >= 350 && level == 6){
+            level = level + 1
+            finalxp = finalxp - 350
+        }
+        else if(finalxp >= 400 && level == 7){
+            level = level + 1
+            finalxp = finalxp - 400
+        }
+        else if(finalxp >= 450 && level == 8){
+            level = level + 1
+            finalxp = finalxp - 450
+        }
+        else if(finalxp >= 500 && level == 9){
+            level = level + 1
+            finalxp = finalxp - 500
+        }
+    })
 
-$(document).ready(function () {
     const APIKEY = "63b7c054969f06502871ab6f";
 
     var id = localStorage.getItem("id");
