@@ -134,18 +134,15 @@ $(document).ready(function () {
             $.ajax(settings).done(function (response) {
                 for (var i = 0; i < response.length && i < limit; i++) {
                     if(response[i].username == username && response[i].password == password){
-                        //localStorage.username = response[i].username
-                        //localStorage.level = response[i].level
-                        //localStorage.points = response[i].points
-                        //localStorage.xp = response[i].xp
+                        localStorage.setItem("username", response[i]._id)
+                        localStorage.setItem("username", response[i].username)
+                        localStorage.setItem("password", response[i].password)
+                        localStorage.setItem("level", response[i].level)
+                        localStorage.setItem("points", response[i].points)
+                        localStorage.setItem("xp", response[i].xp)
+                        
+                        location.href="file:///C:/Users/ryanw/Downloads/ID/Assignment%202/Assignment%20Data/ID_Assignment2-/ZProf_index.html"
                         alert("You have logged in!")
-                        
-                        document.getElementById("loginnone").style.display = "none";
-                        document.getElementById("signupnone").style.display = "none";
-                        document.getElementById("profile").style.display = "block";
-                        
-                        
-                        
 
                     }
                 }
