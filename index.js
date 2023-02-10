@@ -28,7 +28,7 @@ function closesignForm() {
 
 
 //Sign up validation
-function validate() {
+function validatesignup() {
     var username = document.getElementById("username-field").value;
     var password = document.getElementById("password-field").value;
     if (username == "" || password == "") {
@@ -37,6 +37,18 @@ function validate() {
 
     } else {
       alert("You have successfully signed up! Now log in!")
+      return true
+    }
+}
+
+function validatelogin() {
+    var username = document.getElementById("username-field").value;
+    var password = document.getElementById("password-field").value;
+    if (username == "" || password == "") {
+      alert("No username or no password Detected!")
+      return false
+
+    } else {
       return true
     }
 }
@@ -53,7 +65,7 @@ $(document).ready(function () {
         //prevent default action of the button stops page from refreshing
         e.preventDefault();
 
-        if(validate() == true){
+        if(validatesignup() == true){
             var username =  $('#username-field').val()
             var password =  $('#password-field').val()
             var level = 1
@@ -90,36 +102,59 @@ $(document).ready(function () {
 })
 
 
+$(document).ready(function () {
+    const APIKEY = "63b7c054969f06502871ab6f";
 
+    //Login button
+    $('#login-btn').on("click", function (e){
+        //prevent default action of the button stops page from refreshing
+        e.preventDefault();
 
-//Login button
-$('#login-btn').on("click", function (e){
-    //prevent default action of the button stops page from refreshing
-    e.preventDefault();
+        if(validatelogin() == true)
+        {
 
-    if(validate() == true)
-    {
+            var username =  $('#username-field').val()
+            var password =  $('#password-field').val()
 
-        var username =  $('#username-field').val()
-        var password =  $('#password-field').val()
-
-        }
-        var settings = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://interactivedev-2a8f.restdb.io/rest/account",
-            "method": "GET",
-            "headers": {
-              "content-type": "application/json",
-              "x-apikey": APIKEY,
-              "cache-control": "no-cache"
             }
-          }
-          
-          $.ajax(settings).done(function (response) {
-            console.log(response);
-          });
+            var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://interactivedev-2a8f.restdb.io/rest/account",
+                "method": "GET",
+                "headers": {
+                "content-type": "application/json",
+                "x-apikey": APIKEY,
+                "cache-control": "no-cache"
+                }
+            }
 
-        
 
-    })
+            let limit = 10;
+            $.ajax(settings).done(function (response) {
+                for (var i = 0; i < response.length && i < limit; i++) {
+                    if(response[i].username == username && response[i].password == password){
+                        //localStorage.username = response[i].username
+                        //localStorage.level = response[i].level
+                        //localStorage.points = response[i].points
+                        //localStorage.xp = response[i].xp
+                        alert("You have logged in!")
+                        
+                        document.getElementById("loginnone").style.display = "none";
+                        document.getElementById("signupnone").style.display = "none";
+                        document.getElementById("profile").style.display = "block";
+                        
+                        
+
+                    }
+                    else(
+                        alert("Incorrect login credentials detected, try again!")
+                    )
+                }
+                console.log(response);
+            });
+
+            
+
+        })
+})
