@@ -131,10 +131,14 @@
     margin-left:0;
     margin-bottom: 100px;
 }
-
+.level_container{
+    display: flex;
+    flex-direction: row;
+    max-height: 40px;
+}
 .level{
     background-color: greenyellow;
-    height: 40px;
+    max-height: 40px;
     width: 9%;
     font-size: 30px;
     text-justify: center;
@@ -144,6 +148,8 @@
 .exp_needed{
     margin-top: 20px;
     font-size: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 .bottom_rewards_page{
