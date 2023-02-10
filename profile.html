@@ -53,42 +53,134 @@
 
     <div class="rewards_page">
         <div class="top_rewards_page">
-            <div class="exp_bar">
-                <div class="level">Level 0</div>
-            </div>
             <div class="exp_needed">
                 <p>Exp needed: 100</p>
             </div>
+
+            <div class="exp_bar">
+                <div class="level">Level 0</div>
+            </div>
+
         </div>
 
         <div class="bottom_rewards_page">
             <div class="perks">
                 <table>
                     <tr>
-                        <td>Perk</td>
-                        <td>Perk</td>
-                        <td>Perk</td>
-                        <td>Perk</td>
-                        <td>Perk</td>
+                        <td>
+                            level 1
+                            <div class="perkinfo">
+                                You get 2 <br>
+                                free points
+                            </div>
+                        </td>
+                        <td>
+                            level 2
+                            <div class="perkinfo">
+                                1 Free try<br>
+                                to the wheel
+                            </div>
+                        </td>
+                        <td>
+                            level 3
+                            <div class="perkinfo">
+                                You get 5 <br>
+                                free points
+                            </div>
+                        </td>
+                        <td>
+                            level 4
+                            <div class="perkinfo">
+                                3 Free tries<br>
+                                to the wheel
+                            </div>
+                        </td>
+                        <td>
+                            level 5
+                            <div class="perkinfo">
+                                Points now equate<br>
+                                to $10 = 2 points
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Perk</td>
-                        <td>Perk</td>
-                        <td>Perk</td>
-                        <td>Perk</td>
-                        <td>Perk</td>
+                        <td>
+                            level 6
+                            <div class="perkinfo">
+                                You get 10 <br>
+                                free points
+                            </div>
+                        </td>
+                        <td>
+                            level 7
+                            <div class="perkinfo">
+                                5 Free tries<br>
+                                to the wheel
+                            </div>
+                        </td>
+                        <td>
+                            level 8
+                            <div class="perkinfo">
+                                You get 15 <br>
+                                free points
+                            </div>
+                        </td>
+                        <td>
+                            level 9
+                            <div class="perkinfo">
+                                You get 20 <br>
+                                free points
+                            </div>
+                        </td>
+                        <td>
+                            level 10
+                            <div class="perkinfo">
+                                Points now equate<br>
+                                 to $10 = 2 points
+                            </div>
+                        </td>
                     </tr>
                 </table>
             </div>
 
             <div class="info_guide">
                 <p>
-                    Here's all the info you need for perks:
-                    BLAH BLAH BLAH
+                    What are PERKS? <br>
+                    Perks are items you will be able to unlock with XP as you level up!<br>
+                    you get XP by doing the daily activities<br>
+                    down below or by purchasing items
+                    from <br>our catalogue. <br>
+                    <br>
+                    Every dollar you spend = 1 xp!  
                 </p>
             </div>
         </div>
     </div>
+
+    <div>
+        <div class="rewardsweb_page">
+            <div id = "rewardsList" class="rewardsweb_wrapper">
+                
+                <div class="rewardweb_card">
+                    <img src="images/spin the wheel.webp" alt="Have the wheel decide your prize!">
+                    <h1>DAILY CHALLENGE: Spin the wheel</h1><br>
+                    <p><button onclick="spinthewheel()">Play</button></p>
+                </div>
+    
+                <div class="rewardweb_card">
+                    <img src="images/Tic tac toe.png" alt="Pick your own reward from our catalogue!">
+                    <h1>DAILY CHALLENGE: Tic Tac Toe</h1>
+                    <p><button onclick="plslogin()">Play</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="profile.js"></script>
 </body>

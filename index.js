@@ -134,7 +134,7 @@ $(document).ready(function () {
             $.ajax(settings).done(function (response) {
                 for (var i = 0; i < response.length && i < limit; i++) {
                     if(response[i].username == username && response[i].password == password){
-                        localStorage.setItem("username", response[i]._id)
+                        localStorage.setItem("id", response[i]._id)
                         localStorage.setItem("username", response[i].username)
                         localStorage.setItem("password", response[i].password)
                         localStorage.setItem("level", response[i].level)
