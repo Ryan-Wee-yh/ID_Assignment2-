@@ -18,11 +18,9 @@ function closesignForm() {
 
 
 
-//Log in API data get and log in
-
-
-
-
+function plslogin() {
+    alert("Please log in to access the product menu!")
+}
 
 
 

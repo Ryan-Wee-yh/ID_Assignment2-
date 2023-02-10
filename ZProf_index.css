@@ -50,17 +50,6 @@
     cursor: pointer;
 }
 
-.navbar .block .block-profile a{     
-    display: block;
-    float: right; 
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    padding: 24px 20px;
-    text-decoration: none;
-}
-
 .icon-info{
     float: left; 
     font-size: 30px;
@@ -176,7 +165,7 @@
     justify-content: center;
     align-content: center;
     text-align: center;
-    background-color: white;
+    background-color: lightcyan;
     margin-top: 100px;
 }
 .homepage_tab_card img{
@@ -210,7 +199,7 @@
 .intro_container{
     height: 130px;
     width: 1200px;
-    margin-left: 260px;
+    margin-left: 380px;
     background-color: aquamarine;
     border-radius: 20px;
     margin-top: 50px;
@@ -221,4 +210,15 @@
     padding-top: 40px;
     text-align: center;
     font-size: 23px;
+}
+
+.navbar .block .block-profile a{     
+    display: block;
+    float: right; 
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 24px 20px;
+    text-decoration: none;
 }
