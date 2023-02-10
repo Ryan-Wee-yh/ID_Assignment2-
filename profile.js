@@ -2,8 +2,12 @@ var xp = localStorage.getItem("xp")
 var username = localStorage.getItem("username")
 var level = localStorage.getItem("level")
 
+
+
 let percentage = xp/500;
-document.getElementsByClassName("progress").style.width = percentage;
+document.getElementsByClassName("progress").width = percentage;
+console.log(xp, percentage)
+
 
 showusername();
 function showusername(){
@@ -217,3 +221,4 @@ function checkForDraw() {
     alert("It's a draw!");
     return true;
 }
+

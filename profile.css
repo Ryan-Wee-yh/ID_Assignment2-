@@ -102,12 +102,16 @@
 .title_pos{
     color: lightslategrey;
     background-color:gainsboro;
-    width: 60%;
-    padding-left:30px;
-    padding-top: 20px;
-    margin-right: 100px;
+    width: 900px;
     text-align: left;
     border-radius: 20px;
+    padding-left: 310px;
+    padding-top: 140px;
+}
+.username{
+    position: absolute;
+    left: 1200px;
+    top: 380px;
 }
 .img_pos{
     width: 40%;
