@@ -1,6 +1,10 @@
 # ID_Assignment2
 # Name: SG Dropship
 
+
+**Access to GITHUB**<br>
+https://github.com/Ryan-Wee-yh/ID_Assignment2-<br>
+
 ## Design Process<br>
 A place where you can purchase different games and gaming add ons (Either DLC's or like physical items), 
 an online shop with a search bar filter.
