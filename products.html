@@ -24,20 +24,22 @@
         <!-- Navbar -->
         <div class="navbar">
             <div class="block">
-                <div class="icon-info">
-                    <div>
-                        <a href="index.html">
-                            <img src="images/SG Dropship icon.png" alt="SG Dropship" width="110px" height="50px">
-                        </a>
-                    
-                    </div>
-                </div>     
       
       
+              <div class="icon-info">
+                <div>
+                  <a href="index.html">
+                      <img src="images/SG Dropship icon.png" alt="SG Dropship" width="110px" height="50px">
+                  </a>
+                
+                </div>
+              </div>
+              
+
               <div class="block-info">
                 <a href="products.html">Browse Products</a>
               </div>
-      
+
               <div class="block-info">
                 <a href="#anchor">Cart</a>
               </div>
@@ -46,14 +48,59 @@
                 <a href="rewards.html">Browse Rewards</a>
               </div>
       
-              <div class="block-info">
-                <a href="profile.html">Profile</a>
-              </div>
-      
-              
+                <div class="block-info-right" id="loginnone">
+                    <a onclick="loginForm()">Login</a>
+                </div>
+
+                <div class="block-info-right" id="signupnone">
+                    <a onclick="signupForm()">Sign Up</a>
+                </div>
             </div>
           </div>
     </header>
+
+    <!-- Login pop up -->
+    <div class="login-popup" id="loginForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+      
+          <label for="Username"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="Username" required id="username-field">
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required id="password-field">
+      
+          <button type="submit" class="btn" id="login-btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closelogForm()">Close</button>
+        </form>
+      </div>
+
+
+    <!-- Sign Up pop up-->
+      <div class="signup-popup" id="signupForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Sign Up to SG Dropship!</h1>
+      
+          <label for="Username"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="Username" required id="username-field">
+      
+          <label for="ps"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="ps" required >
+
+          <label for="psw"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw" required id="password-field"> 
+      
+          <button type="submit" class="btn" id="submit-btn" >Sign Up!</button>
+          <button type="button" class="btn cancel" onclick="closesignForm()">Close</button>
+        </form>
+      </div>
+      
+    <!-- validation for Sign Up-->
+    <div class="signup-popup" id="nousername">
+        <form action="/action_page.php" class="form-container">
+            <h1>No Username Detected! Try Again</h1>
+        </form>
+    </div>
 
 
     
