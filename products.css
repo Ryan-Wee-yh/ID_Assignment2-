@@ -134,9 +134,16 @@
     opacity: 100;
 }
 
+.top_product_page{
+    display: flex;
+    flex-direction: row;
+}
 
-
-
+.top_product_page a{
+    position: absolute;
+    right: 50px;
+    top: 130px;
+}
 
 .product_page{
     background: lightblue;

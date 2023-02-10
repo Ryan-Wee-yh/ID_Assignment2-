@@ -39,10 +39,6 @@
               <div class="block-info">
                 <a href="products.html">Browse Products</a>
               </div>
-
-              <div class="block-info">
-                <a href="#anchor">Cart</a>
-              </div>
       
               <div class="block-info">
                 <a href="rewards.html">Browse Rewards</a>
@@ -105,9 +101,13 @@
 
     
     <div class="product_page">
-        <div class="search_bar">
-            <input id = "input" type="text" name = "search"
-            onkeyup = "search_games()" placeholder="Search..">
+
+        <div class="top_product_page">
+            <div class="search_bar">
+                <input id = "input" type="text" name = "search"
+                onkeyup = "search_games()" placeholder="Search..">
+            </div>
+            <a href="#anchor">Cart</a>
         </div>
 
         <div id = "gamesList" class="product_wrapper">
@@ -131,7 +131,7 @@
             <div id="Valorant" class="product_card">
                 <img class = "image" src="images/valorant.jpg" alt="Valorant">
                 <h1 class = "games">Valorant</h1>
-                <div class = "price">$0.01</div>
+                <div class = "price">$6.90</div>
                 <p>Shoot heads</p>
                 <button class = "add_To_Cart">Add to Cart</button>
             </div>
@@ -139,7 +139,7 @@
             <div id="Osu" class="product_card">
                 <img class = "image" src="images/osu.jpg" alt="Osu">
                 <h1 class = "games">Osu</h1>
-                <div class = "price">$0.01</div>
+                <div class = "price">$6.90</div>
                 <p>Click circles</p>
                 <button class = "add_To_Cart">Add to Cart</button>
             </div>
@@ -148,7 +148,7 @@
                 <img class = "image" src="images/red dead redemption.jpg" alt="Red Dead Redemption">
                 <h1 class = "games">Red Dead Redemption</h1>
                 <div class = "price">$33.60</div>
-                <p>Idk what this game is</p>
+                <p>Redemption while you're red and dead</p>
                 <button class = "add_To_Cart">Add to Cart</button>
             </div>
 
@@ -156,7 +156,7 @@
                 <img class = "image" src="images/legend of zelda.jpg" alt="The Legend of Zelda">
                 <h1 class = "games">The Legend of Zelda</h1>
                 <div class = "price">$59.90</div>
-                <p>Idk what this game is</p>
+                <p>Zelda's legend</p>
                 <button class = "add_To_Cart">Add to Cart</button>
             </div>
 
@@ -199,8 +199,8 @@
     <div class="top_cart_page" id="anchor">
         <div class="top_cart_wrapper">
             <div class="cost">
-                <p>Total cost: $</p>
-                <p class = "total_cost">0</p>
+                <p>Total cost: </p>
+                <p class = "total_cost"></p>
             </div>
             <button class = "pay_now">Pay now</button>
         </div>

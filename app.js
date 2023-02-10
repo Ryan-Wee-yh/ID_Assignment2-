@@ -3,8 +3,6 @@ if (document.readyState == 'loading') {
 } else {
     ready()
 }
-var cart = document.getElementsByClassName("top_cart_page")
-document.querySelector(cart)
 function ready() {
     var removeGameButtons = document.getElementsByClassName('remove')
     for (var i = 0; i < removeGameButtons.length; i++) {
@@ -89,7 +87,6 @@ function addItemToCart(title, price, image) {
         }
     }
     var gamesHtml = `
-        <div class="cart_item">
             <div class="game_image">
                 <img src="${image}" alt="">
             </div>
@@ -97,7 +94,7 @@ function addItemToCart(title, price, image) {
             <input class="quantity_input" type="number" value="1">
             <h3 class = "cart_price">${price}</h3>
             <button class = "remove">Remove</button>
-        </div>`
+        `
     cartItem.innerHTML = gamesHtml
     games.append(cartItem)
     console.log(cartItem)
