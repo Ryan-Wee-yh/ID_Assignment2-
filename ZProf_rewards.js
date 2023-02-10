@@ -1,6 +1,8 @@
+var points = localStorage.getItem("points")
 
-function Amazon50GC(){
-    if(points > 10){
+function spinthewheel(){
+    if(points > 30){
+        points = points - 30
         alert("Gift Card redeemed!")
     }
     else{
@@ -8,8 +10,20 @@ function Amazon50GC(){
     }
 }
 
+function selfselect(){
+    if(points > 40){
+        points = points - 40
+        alert("Gift Card redeemed!")
+    }
+    else{
+        alert("Not enough points!")
+    }
+}
+
+
 function Amazon50GC(){
     if(points > 10){
+        points = points - 10
         alert("Gift Card redeemed!")
     }
     else{
@@ -19,6 +33,7 @@ function Amazon50GC(){
 
 function AppleGC(){
     if(points > 10){
+        points = points - 10
         alert("Gift Card redeemed!")
     }
     else{
@@ -28,6 +43,7 @@ function AppleGC(){
 
 function StarbucksGC(){
     if(points > 10){
+        points = points - 10
         alert("Gift Card redeemed!")
     }
     else{
@@ -37,6 +53,7 @@ function StarbucksGC(){
 
 function VSGC(){
     if(points > 10){
+        points = points - 10
         alert("Gift Card redeemed!")
     }
     else{
@@ -46,6 +63,7 @@ function VSGC(){
 
 function McDonaldsGC(){
     if(points > 10){
+        points = points - 10
         alert("Gift Card redeemed!")
     }
     else{
@@ -55,6 +73,7 @@ function McDonaldsGC(){
 
 function TidyGC(){
     if(points > 10){
+        points = points - 10
         alert("Gift Card redeemed!")
     }
     else{
@@ -64,6 +83,7 @@ function TidyGC(){
 
 function WalmartGC(){
     if(points > 10){
+        points = points - 10
         alert("Gift Card redeemed!")
     }
     else{
@@ -73,6 +93,7 @@ function WalmartGC(){
 
 function TargetGC(){
     if(points > 10){
+        points = points - 10
         alert("Gift Card redeemed!")
     }
     else{
@@ -82,6 +103,7 @@ function TargetGC(){
 
 function SteamGC(){
     if(points > 20){
+        points = points - 20
         alert("Gift Card redeemed!")
     }
     else{
@@ -92,6 +114,7 @@ function SteamGC(){
 function HotelGC(){
     if(points > 20){
         alert("Gift Card redeemed!")
+        points = points - 20
     }
     else{
         alert("Not enough points!")
@@ -100,6 +123,7 @@ function HotelGC(){
 
 function IKEAGC(){
     if(points > 35){
+        points = points - 35
         alert("Gift Card redeemed!")
     }
     else{
@@ -109,6 +133,7 @@ function IKEAGC(){
 
 function Amazon200GC(){
     if(points > 35){
+        points = points - 35
         alert("Gift Card redeemed!")
     }
     else{
@@ -116,40 +141,6 @@ function Amazon200GC(){
     }
 }
 
-
-
-
-
-
-
-
-
-//API data transfer
-$(document).ready(function () {
-    //what kind of interface we want at the start 
-    const APIKEY = "63b7c054969f06502871ab6f";
-
-    var settings = {
-        "async": true,
-        "crossDomain": true,
-        "url": "https://interactivedev-2a8f.restdb.io/rest/account",
-        "method": "GET",
-        "headers": {
-        "content-type": "application/json",
-        "x-apikey": APIKEY,
-        "cache-control": "no-cache"
-        }
-    }
-
-
-    let limit = 10;
-    $.ajax(settings).done(function (response) {
-        for (var i = 0; i < response.length && i < limit; i++) {
-                sessionStorage.username = response[i].username
-                sessionStorage.level = response[i].level
-                sessionStorage.points = response[i].points
-                sessionStorage.xp = response[i].xp
-        }
-        console.log(response);
-    });
-})
+function showpoint(){
+    document.getElementById("pointscore");
+}
