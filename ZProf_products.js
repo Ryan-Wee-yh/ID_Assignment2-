@@ -1,3 +1,5 @@
+
+
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
@@ -58,6 +60,8 @@ function removeGame(event) {
     buttonClicked.parentElement.remove()
     updateCartTotal()
 }
+
+var num = updateCartTotal()
 function updateCartTotal() {
     var gamesContainer = document.getElementsByClassName('games_container')[0]
     var games = gamesContainer.getElementsByClassName('cart_item')
@@ -72,6 +76,7 @@ function updateCartTotal() {
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('total_cost')[0].innerText = "$" + total
+    return total;
 }
 
 function quantityChanged(event) {
@@ -122,3 +127,85 @@ function addItemToCart(title, price, image) {
     cartItem.getElementsByClassName('quantity_input')[0].addEventListener('change', quantityChanged)
 }
 
+
+function calctotal(){
+    var points = localStorage.getItem("points")
+    var xp = localStorage.getItem("xp")
+    var level = localStorage.getItem("level")
+
+    var newxp = Math.round(num)
+    var newpoints = Math.round(num/10)
+
+    finalpoints = newpoints + points
+    finalxp = newxp + xp
+
+
+
+
+    if(finalxp >= 100 && level == 1){
+        level = level + 1
+        finalxp = finalxp - 100
+    }
+    else if(finalxp >= 150 && level == 2){
+        level = level + 1
+        finalxp = finalxp - 150
+    }
+    else if(finalxp >= 200 && level == 3){
+        level = level + 1
+        finalxp = finalxp - 200
+    }
+    else if(finalxp >= 250 && level == 4){
+        level = level + 1
+        finalxp = finalxp - 250
+    }
+    else if(finalxp >= 300 && level == 5){
+        level = level + 1
+        finalxp = finalxp - 300
+    }
+    else if(finalxp >= 350 && level == 6){
+        level = level + 1
+        finalxp = finalxp - 350
+    }
+    else if(finalxp >= 400 && level == 7){
+        level = level + 1
+        finalxp = finalxp - 400
+    }
+    else if(finalxp >= 450 && level == 8){
+        level = level + 1
+        finalxp = finalxp - 450
+    }
+    else if(finalxp >= 500 && level == 9){
+        level = level + 1
+        finalxp = finalxp - 500
+    }
+}
+
+
+
+$(document).ready(function () {
+    const APIKEY = "63b7c054969f06502871ab6f";
+
+    var id = localStorage.getItem("id");
+
+
+    var jsondata = {"points": finalpoints, "xp": finalxp, "level": level };
+    var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": `https://interactivedev-2a8f.restdb.io/rest/account/${id}` ,
+    "method": "PUT",
+    "headers": {
+        "content-type": "application/json",
+        "x-apikey": APIKEY,
+        "cache-control": "no-cache"
+    },
+
+    "processData": false,
+    "data": JSON.stringify(jsondata)
+    }
+
+    $.ajax(settings).done(function (response) {
+    console.log(response);
+    });
+    
+})
