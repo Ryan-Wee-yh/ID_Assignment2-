@@ -29,11 +29,11 @@ function closesignForm() {
 
 //Sign up validation
 function validatesignup() {
-    var username = document.getElementById("username-field").value;
-    var password = document.getElementById("password-field").value;
+    var username = document.getElementById("usernamesign-field").value;
+    var password = document.getElementById("passwordsign-field").value;
     if (username == "" || password == "") {
       alert("No username or no password Detected!")
-      return false
+      return true
 
     } else {
       alert("You have successfully signed up! Now log in!")
@@ -66,10 +66,10 @@ $(document).ready(function () {
         e.preventDefault();
 
         if(validatesignup() == true){
-            var username =  $('#username-field').val()
-            var password =  $('#password-field').val()
+            var username =  $('#usernamesign-field').val()
+            var password =  $('#passwordsign-field').val()
             var level = 1
-            var points = 0
+            var points = 300
             var xp = 0
         
             var jsondata = {"username": username,

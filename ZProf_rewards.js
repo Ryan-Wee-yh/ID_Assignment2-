@@ -51,18 +51,14 @@ function GC200(){
     }
 }
 
-$(document).ready(function(){
-    showpoint();
-    function showpoint(){
-        $('#pointscore').val(points);
-    }
-
-})
-
 $(document).ready(function () {
     const APIKEY = "63b7c054969f06502871ab6f";
 
-    var id = localStorage.getItem("id")
+    var id = localStorage.getItem("id");
+    showpoint();
+    function showpoint(){
+        $('#pointscore').text(points);
+    }
 
     var jsondata = {"points": points};
     var settings = {
@@ -75,6 +71,7 @@ $(document).ready(function () {
         "x-apikey": APIKEY,
         "cache-control": "no-cache"
     },
+
     "processData": false,
     "data": JSON.stringify(jsondata)
     }

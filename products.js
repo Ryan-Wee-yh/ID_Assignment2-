@@ -146,7 +146,7 @@ $(document).ready(function () {
                         localStorage.setItem("points", response[i].points)
                         localStorage.setItem("xp", response[i].xp)
                         
-                        location.href="file:///C:/Users/ryanw/Downloads/ID/Assignment%202/Assignment%20Data/ID_Assignment2-/ZProf_index.html"
+                        location.href="file:///C:/Users/ryanw/Downloads/ID/Assignment%202/Assignment%20Data/ID_Assignment2-/ZProf_products.html"
                         alert("You have logged in!")
 
                     }
