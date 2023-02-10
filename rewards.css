@@ -152,7 +152,7 @@
     border-bottom:10px;
     border-left:0;
     border-right:0;
-    border-color: rgb(233, 47, 47);
+    border-color: lightblue;
     border-style:solid;    
     
 }
@@ -163,9 +163,8 @@
     font-weight: bolder;
     list-style: none;
     text-align: left;
-    background-color: rgb(233, 47, 47);
+    background-color:lightblue;
     border-bottom: 10px;
-    border-color: rgb(233, 47, 47);
     color: black;
     padding-top: 75px;
     padding-bottom: 75px;
@@ -175,10 +174,11 @@
   
 .pointinfo_pos{
     color: white;
-    background-color: rgb(233, 47, 47);;
+    background-color: #acb6e5;
     width: 50%;
     padding-left:110px;
     text-align: left;
+    border-radius: 20px;
 }
 .points_pos{
     padding-top: 10px;
@@ -201,7 +201,7 @@
 
 
 .rewardsweb_page{
-    background: purple;
+    background: lightskyblue;
     display: flex;
     flex-direction: column;
     height: 650px;
