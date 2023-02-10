@@ -157,33 +157,68 @@
     background: lightblue;
     display: flex;
     flex-direction: column;
-    height: 905px;
-    justify-content: center;
+    height: 772px;
 }
+
+
 
 .homepage_tab_wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    align-items: center;
     justify-items: center;
 }
 
 .homepage_tab_card{
-    margin: 10px;
-    height: 425px;
-    width: 300px;
-    border-radius: 4px;
+    border-radius: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     text-align: center;
-    background-color: whitesmoke;
-    border-radius: 30px;
+    background-color: white;
+    margin-top: 100px;
 }
-
+.homepage_tab_card img{
+    height: 400px;
+    width: 500px;
+    border-radius: 40px;
+}
 .homepage_tab_card a{
     text-align: center;
     font-size: 30px;
+}
+.homepage_tab_card a:link { 
+    text-decoration: none; 
+}
+
+
+.homepage_tab_card a:visited { 
+    text-decoration: none; 
+}
+
+
+.homepage_tab_card a:hover { 
+    text-decoration: none; 
+}
+
+
+.homepage_tab_card a:active { 
+    text-decoration: none; 
+}
+
+.intro_container{
+    height: 130px;
+    width: 1200px;
+    margin-left: 260px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.intro_container h3{
+    font-weight: normal;
+    padding-left: 20px;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 23px;
 }
