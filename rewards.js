@@ -23,18 +23,13 @@ function plslogin() {
 }
 
 
-
-
-
-
-
 //Sign up validation
-function validate() {
-    var username = document.getElementById("username-field").value;
-    var password = document.getElementById("password-field").value;
+function validatesignup() {
+    var username = document.getElementById("usernamesign-field").value;
+    var password = document.getElementById("passwordsign-field").value;
     if (username == "" || password == "") {
       alert("No username or no password Detected!")
-      return false
+      return true
 
     } else {
       alert("You have successfully signed up! Now log in!")
@@ -42,7 +37,6 @@ function validate() {
     }
 }
 
-//login validation
 function validatelogin() {
     var username = document.getElementById("username-field").value;
     var password = document.getElementById("password-field").value;
@@ -67,9 +61,9 @@ $(document).ready(function () {
         //prevent default action of the button stops page from refreshing
         e.preventDefault();
 
-        if(validate() == true){
-            var username =  $('#username-field').val()
-            var password =  $('#password-field').val()
+        if(validatesignup() == true){
+            var username =  $('#usernamesign-field').val()
+            var password =  $('#passwordsign-field').val()
             var level = 1
             var points = 0
             var xp = 0
@@ -136,14 +130,14 @@ $(document).ready(function () {
             $.ajax(settings).done(function (response) {
                 for (var i = 0; i < response.length && i < limit; i++) {
                     if(response[i].username == username && response[i].password == password){
-                        localStorage.setItem("username", response[i]._id)
+                        localStorage.setItem("id", response[i]._id)
                         localStorage.setItem("username", response[i].username)
                         localStorage.setItem("password", response[i].password)
                         localStorage.setItem("level", response[i].level)
                         localStorage.setItem("points", response[i].points)
                         localStorage.setItem("xp", response[i].xp)
                         
-                        location.href="file:///C:/Users/ryanw/Downloads/ID/Assignment%202/Assignment%20Data/ID_Assignment2-/ZProf_rewards.html"
+                        location.href="file:///C:/Users/ryanw/Downloads/ID/Assignment%202/Assignment%20Data/ID_Assignment2-/ZProf_index.html"
                         alert("You have logged in!")
 
                     }

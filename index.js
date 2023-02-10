@@ -69,7 +69,7 @@ $(document).ready(function () {
             var username =  $('#usernamesign-field').val()
             var password =  $('#passwordsign-field').val()
             var level = 1
-            var points = 300
+            var points = 20
             var xp = 0
         
             var jsondata = {"username": username,
