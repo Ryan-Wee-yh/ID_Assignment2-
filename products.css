@@ -49,18 +49,6 @@
     cursor: pointer;
 }
 
-.navbar .block .block-profile a{     
-    display: none;
-    float: right; 
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    padding: 24px 20px;
-    text-decoration: none;
-    z-index: 2;
-}
-
 .icon-info{
     float: left; 
     font-size: 30px;
