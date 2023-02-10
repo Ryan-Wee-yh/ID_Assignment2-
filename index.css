@@ -165,7 +165,7 @@
     justify-content: center;
     align-content: center;
     text-align: center;
-    background-color: white;
+    background-color: lightcyan;
     margin-top: 100px;
 }
 .homepage_tab_card img{
@@ -199,7 +199,7 @@
 .intro_container{
     height: 130px;
     width: 1200px;
-    margin-left: 260px;
+    margin-left: 380px;
     background-color: aquamarine;
     border-radius: 20px;
     margin-top: 50px;

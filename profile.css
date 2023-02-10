@@ -51,7 +51,7 @@
 .navbar .block .block-profile a{     
     display: block;
     float: right; 
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     color: black;
     text-align: center;
@@ -79,7 +79,7 @@
     border-bottom:10px;
     border-left:0;
     border-right:0;
-    border-color:lightgrey;
+    border-color:lightblue;
     border-style:solid;    
     
 }
@@ -124,6 +124,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: lightgreen;
 }
 
 .exp_bar{
@@ -135,7 +136,8 @@
     margin-bottom: 100px;
 }
 .progress{
-    background-color: greenyellow;
+    background-color: green;
+    height: 40px;
     width: 1%;
 }
 .level_container{
@@ -163,7 +165,7 @@
 .bottom_rewards_page{
     display: flex;
     justify-content: space-between;
-    background-color: blueviolet;
+    background-color: lightblue;
     height: 390px;
 }
 
@@ -171,7 +173,7 @@
     margin-top:30px;
     margin-left: 30px;
     margin-bottom: 30px;
-    background-color: aqua;
+    background-color: lightskyblue;
     width: 950px;
 }
 
@@ -209,7 +211,7 @@ td{
 
 
 .rewardsweb_page{
-    background: rgb(35, 171, 196);
+    background: lightgreen;
     display: flex;
     flex-direction: column;
     height: 650px;
@@ -278,7 +280,7 @@ td{
     background-color: lightblue;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 1455px;
+    top: 1625px;
     left: 500px;
     padding: 3em;
     border-radius: 1em;
@@ -349,8 +351,8 @@ td{
     height: 500px;
     margin: 0 auto;
     position: absolute;
-    top: 1230px;
-    right: 300px;
+    top: 1390px;
+    right: 250px;
 }
   
 .square {

@@ -173,10 +173,11 @@
 
   
 .pointinfo_pos{
-    color: black;
+    color: whitesmoke;
     background-color: #acb6e5;
     width: 60%;
     padding-left:110px;
+    padding-top: 15px;
     text-align: left;
     border-radius: 20px;
 }
@@ -186,13 +187,14 @@
     padding-right: 50px;
     justify-content: center;
     font-size: 35px;
-    color: black;
+    color: orangered;
 }
 .info_pos{
-    color: black;
+    color: whitesmoke;
     font-size: 40px;
-    width: 30%;
+    width: 35%;
     text-align: center;
+    padding-left: 80px;
 }
   
 .flex-item img{
